@@ -1,0 +1,5 @@
+
+Отримати,   git pull
+Вибрати,    git add .
+Підписати   git commit -m "текст"
+Надіслати   git push

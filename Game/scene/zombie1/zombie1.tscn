@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cr0o6k7yjw00x"]
+
+[ext_resource type="Script" uid="uid://c7jh10x3iry43" path="res://scene/zombie1/zombie_1.gd" id="1_e8656"]
+[ext_resource type="Texture2D" uid="uid://uqwmil7g3efi" path="res://scene/zombie1/Zombie-Tileset---_0394_Capa-395.png" id="1_qmmja"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_heji8"]
+
+[node name="zombie1" type="CharacterBody2D" unique_id=548411399]
+script = ExtResource("1_e8656")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=542530053]
+texture = ExtResource("1_qmmja")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=606283687]
+scale = Vector2(0.45, 0.45)
+shape = SubResource("CapsuleShape2D_heji8")

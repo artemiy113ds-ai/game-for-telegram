@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dauer10n2h3ra"]
+
+[ext_resource type="Script" uid="uid://dfqjajvsucchm" path="res://scene/player/player.gd" id="1_cm2cf"]
+[ext_resource type="Texture2D" uid="uid://ck1ngt5eqfsjl" path="res://scene/player/Zombie-Tileset---_0476_Capa-477.png" id="1_v7pse"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cm2cf"]
+radius = 7.0
+
+[node name="Player" type="CharacterBody2D" unique_id=854328884]
+script = ExtResource("1_cm2cf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=905541097]
+position = Vector2(0, -8)
+texture = ExtResource("1_v7pse")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1010183132]
+position = Vector2(0, -7.5)
+shape = SubResource("CircleShape2D_cm2cf")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2141902883]
